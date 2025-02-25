@@ -16,7 +16,6 @@ export const createTransaction = async (name, amount) => {
   });
   return await response.json();
 };
-
 // Registrar un nuevo usuario
 export const registerUser = async (username, password) => {
   const response = await fetch(`${API_URL}/register`, {
